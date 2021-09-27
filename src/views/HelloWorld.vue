@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>"Hello World"</h1>
-    <router-link to="/"> <my-button /></router-link>
+    <router-link to="/">
+      <my-button text="prop test" />
+    </router-link>
   </div>
 </template>
 

@@ -1,8 +1,12 @@
 <template>
-  <button class="my-button">click</button>
+  <button class="my-button" v-text="text" />
 </template>
 
-<script></script>
+<script>
+export default {
+  props: { text: { required: true, type: String } },
+}
+</script>
 
 <style>
 .my-button {

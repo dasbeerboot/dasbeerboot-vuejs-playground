@@ -6,7 +6,7 @@
       <button type="button" @click="setHomeName">set</button>
     </div>
     <router-link to="/helloworld">
-      <my-button />
+      <my-button text="click" />
     </router-link>
   </div>
 </template>
@@ -20,6 +20,7 @@ export default {
     return {
       title: 'dasbeerboot',
       inputDefault: 'dasbeerboot',
+      isVisible: true,
     }
   },
   methods: {
