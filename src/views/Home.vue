@@ -6,14 +6,16 @@
       <button type="button" @click="setHomeName">set</button>
     </div>
     <router-link to="/helloworld">
-      <button class="go-next-button">click</button>
+      <my-button />
     </router-link>
   </div>
 </template>
 
 <script>
+import MyButton from '../components/button/MyButton.vue'
 const date = new Date().toLocaleString()
 export default {
+  components: { MyButton },
   data() {
     return {
       title: 'dasbeerboot',
@@ -60,19 +62,5 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.go-next-button {
-  width: 140px;
-  height: 42px;
-  color: #ffffff;
-  background-color: rgb(35, 178, 235);
-  border: none;
-  border-radius: 8px;
-  margin-top: 50px;
-  cursor: pointer;
-}
-.go-next-button:hover {
-  background-color: rgb(100, 192, 228);
 }
 </style>
